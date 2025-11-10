@@ -7,7 +7,7 @@ client = OpenAI(api_key= os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(page_title="ChatGPT Agent", page_icon="🤖", layout="centered")
 
-st.title("💬 ChatGPT Agent")
+st.title("ChatGPT Agent")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []

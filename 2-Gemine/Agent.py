@@ -11,7 +11,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 st.set_page_config(page_title="Gemini Chat Agent", page_icon="🤖", layout="centered")
-st.title("💬 Gemini Chat Agent")
+st.title("Gemini Chat Agent")
 
 
 if "messages" not in st.session_state:
