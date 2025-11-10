@@ -7,6 +7,7 @@ load_dotenv()
 client = Client(api_key=os.getenv("XAI_API_KEY"), timeout=3600)
 chat = client.chat.create(model="grok-4")  
 chat.append(system("You are Grok, a helpful assistant."))
+print("Welcome to Deepseek Personal Agent. Type 'exit' to quit.")
 while True:
     chat = input("You : ")
     if chat.lower() == "exit":
